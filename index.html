@@ -11,48 +11,48 @@
       integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
       crossorigin="anonymous"
     />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <title>Vanilla Weather App</title>
   </head>
   <body>
     <div class="container">
       <div class="weather-wrapper">
-        <div class="weather">
-          <form id="search-form" classs+="mb-3"
-          <div class="row">
-            <div class="col-9">
-              <div class="clearfix">
+        <div class="weather-app">
+          <form id="search-form" class="mb-3">
+            <div class="row">
+              <div class="col-9">
                 <input
-                type="search"
-                placeholder="What city are you looking for?"
-                class="form-control"
-                id="city-input"
-                autocomplete="off"
+                  type="search"
+                  placeholder="What city are you looking for?"
+                  class="form-control"
+                  id="city-input"
+                  autocomplete="off"
                 />
-                </div>
-                <div class="col-3">
-                <input
-                type="submit"
-                value="search"
-                class="btn btn-primary w-100"
-                />
-                </div>
-                </div>
-              </form>
-              <div class="overview">
-              <h1 id="city"></h1>
-              <ul>
-                <li>Last updated: <span id=date></span></li>
-                <li id="description"></li>
-              </ul>
               </div>
-              <div class="row">
-                <div class="col-6">
-                  <div class="clearfix weather temperature">
-                    <img src="" alt="clear" id="icon" class="float-left" />
-                  </div>
-               <div class="float-left">
-                <strong id="temperature"></strong>
-                <span class="units">°C</span>
+              <div class="col-3">
+                <input
+                  type="submit"
+                  value="search"
+                  class="btn btn-primary w-100"
+                />
+              </div>
+            </div>
+          </form>
+          <div class="overview">
+            <h1 id="city"></h1>
+            <ul>
+              <li>Last updated: <span id="date"></span></li>
+              <li id="description"></li>
+            </ul>
+          </div>
+          <div class="row">
+            <div class="col-6">
+              <div class="clearfix weather-temperature">
+                <img src="" alt="clear" id="icon" class="float-left" />
+
+                <div class="float-left">
+                  <strong id="temperature"></strong>
+                  <span class="units"> °C</span>
                 </div>
               </div>
             </div>
@@ -64,19 +64,18 @@
               </ul>
             </div>
           </div>
-
-          
+          <div class="weather-forecast" id="forecast"></div>
         </div>
+        <small>
+          <a
+            href="https://github.com/lindokuhlenyoka/my-updated-weather-app"
+            target="_blank"
+            rel="noreferrer"
+            >Open-source code</a
+          >
+          <em>by Lindokuhle Nyoka</em>
+        </small>
       </div>
-      <small>
-        <a
-          href="https://github.com/lindokuhlenyoka/my-updated-weather-app"
-          target="_blank"
-          rel="noreferrer"
-          >Open-source code</a
-        >
-        <em>by Lindokuhle Nyoka</em>
-      </small>
     </div>
     <script src="app.js"></script>
   </body>
