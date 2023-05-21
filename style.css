@@ -86,3 +86,7 @@ li {
 .weather-forecast-temperatures {
   font-size: 13px;
 }
+
+.btn btn-primary w-10 {
+  color: blueviolet;
+}
