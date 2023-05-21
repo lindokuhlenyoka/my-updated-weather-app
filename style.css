@@ -1,13 +1,14 @@
 body {
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
 
 h1 {
-  color: grey;
+  color: whitesmoke;
   font-size: 26px;
   font-weight: 100;
   line-height: 28px;
   margin-bottom: 0;
+  font-display: capitalize;
 }
 
 ul {
@@ -20,10 +21,11 @@ li {
   margin: 0;
   padding: 0;
 
-  color: blue;
+  color: whitesmoke;
   font-size: 18px;
   font-weight: 100;
   line-height: 19px;
+  text-transform: capitalize;
 }
 
 .weather-wrapper {
@@ -33,9 +35,11 @@ li {
 
 .weather-app {
   padding: 20px;
-  border: 1px solid black;
-  border-radius: 5px;
+  border: 10px hidden #885df1;
+  border-radius: 20px;
+  background: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
 }
+
 .overview {
   margin-bottom: 20px;
 }
@@ -47,7 +51,7 @@ li {
 }
 
 .weather-temperature strong {
-  color: navy;
+  color: whitesmoke;
   font-size: 64px;
   line-height: 1;
   font-weight: 400;
@@ -55,12 +59,15 @@ li {
 
 .weather-temperature .units {
   position: relative;
-  font-size: 16px;
+  font-size: 20px;
   top: -34px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  color: whitesmoke;
 }
 
 .weather-temperature .active {
-  color: rgb(33, 33, 33);
+  color: green;
   cursor: default;
 }
 
@@ -71,7 +78,8 @@ li {
 .weather-forecast {
   margin-top: 20px;
   text-align: center;
-  color: #000;
+  color: whitesmoke;
+  font-style: bold;
 }
 
 .weather-forecast-date {
@@ -86,7 +94,10 @@ li {
 .weather-forecast-temperatures {
   font-size: 13px;
 }
+.form-control {
+  color: green;
+}
 
-.btn btn-primary w-10 {
-  color: blueviolet;
+a {
+  color: purple;
 }
