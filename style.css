@@ -73,6 +73,7 @@ li {
 
 .weather-temperature .active:hover {
   text-decoration: none;
+  color: purple;
 }
 
 .weather-forecast {
