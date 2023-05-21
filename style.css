@@ -1,20 +1,12 @@
 body {
-  font-family: "Times New Roman", Times, serif;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
-.weather {
-  max-width: 600px;
-  margin: 30px auto;
-  padding: 20px;
-  border: 1px solid grey;
-  border-radius: 10px;
-}
-
-.heading {
-  color: rgb(135, 135, 135);
-  font-size: 22px;
-  font-weight: 90;
-  line-height: 26px;
+h1 {
+  color: grey;
+  font-size: 26px;
+  font-weight: 100;
+  line-height: 28px;
   margin-bottom: 0;
 }
 
@@ -27,22 +19,23 @@ li {
   list-style: none;
   margin: 0;
   padding: 0;
-  color: rgb(135, 135, 135);
-  font-size: 16px;
+
+  color: blue;
+  font-size: 18px;
   font-weight: 100;
-  line-height: 18px;
+  line-height: 19px;
 }
 
-.spacing {
-  margin: 0;
-  padding: 0;
-}
-
-.heading {
-  margin: 0;
-  padding: 0;
-}
 .weather-wrapper {
   max-width: 600px;
-  margin: 30px;
+  margin: 30px auto;
+}
+
+.weather-app {
+  padding: 20px;
+  border: 1px solid purple;
+  border-radius: 5px;
+}
+.overview {
+  margin-bottom: 20px;
 }
