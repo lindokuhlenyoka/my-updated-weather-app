@@ -18,29 +18,54 @@
       <div class="weather-wrapper">
         <div class="weather">
           <form id="search-form" classs+="mb-3"
-          
-          
           <div class="row">
-            <div class="col-6">
+            <div class="col-9">
               <div class="clearfix">
-                <img
-                  src="https://ssl.gstatic.com/onebox/weather/64/sunny_s_cloudy.png"
-                  alt="clear"
-                  class="float-left"
+                <input
+                type="search"
+                placeholder="What city are you looking for?"
+                class="form-control"
+                id="city-input"
+                autocomplete="off"
                 />
-                <div class="float-left">19°C | °F</div>
+                </div>
+                <div class="col-3">
+                <input
+                type="submit"
+                value="search"
+                class="btn btn-primary w-100"
+                />
+                </div>
+                </div>
+              </form>
+              <div class="overview">
+              <h1 id="city"></h1>
+              <ul>
+                <li>Last updated: <span id=date></span></li>
+                <li id="description"></li>
+              </ul>
+              </div>
+              <div class="row">
+                <div class="col-6">
+                  <div class="clearfix weather temperature">
+                    <img src="" alt="clear" id="icon" class="float-left" />
+                  </div>
+               <div class="float-left">
+                <strong id="temperature"></strong>
+                <span class="units">°C</span>
+                </div>
               </div>
             </div>
             <div class="col-6">
               <ul>
-                <li>Precipitation: 2%</li>
-                <li>Humidity: 67%</li>
-                <li>Wind: 11 km/h</li>
+                <li>Precipitation: <span id="Precipitation"></span>%</li>
+                <li>Humidity: <span id="Humidity"></span>%</li>
+                <li>Wind: <span id="wind"></span> km/h</li>
               </ul>
             </div>
           </div>
 
-          <script src="app.js"></script>
+          
         </div>
       </div>
       <small>
@@ -53,5 +78,6 @@
         <em>by Lindokuhle Nyoka</em>
       </small>
     </div>
+    <script src="app.js"></script>
   </body>
 </html>
