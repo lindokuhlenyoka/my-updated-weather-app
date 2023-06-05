@@ -94,7 +94,9 @@ li {
 }
 
 .weather-forecast-temperatures {
-  font-size: 13px;
+  font-size: 15px;
+  color: whitesmoke;
+  font-weight: bold;
 }
 
 .weather-forecast-temperature-max {
